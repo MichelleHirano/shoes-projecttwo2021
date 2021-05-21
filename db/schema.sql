@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS shooz_db;
+
+CREATE DATABASE shooz_db;
