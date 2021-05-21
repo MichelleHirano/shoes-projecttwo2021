@@ -21,6 +21,10 @@ Post.init(
         type: DataTypes.TEXT,
         allowNull: true
       },
+      photos: {
+        type: DataTypes.BLOB,
+        allowNull:true
+      },
       user_id: {
         type: DataTypes.INTEGER,
         references: {
