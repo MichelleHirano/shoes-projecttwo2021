@@ -1,0 +1,79 @@
+
+.btn-holder {
+    text-align: right;
+}
+
+.btn {
+    background-color: lightblue;
+    margin-top: 10px;
+    height: 35px;
+    color: black;
+}
+
+.filter-bar {
+    background-color: lightcoral;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    text-align: center;
+    color: black;
+}
+
+.blog-content {
+    background-color: green;
+}
+
+.create-btn {
+    color: white;
+    background-color: green;
+    height: 35px;
+}
+
+.view-btn {
+    color: white;
+    background-color: blueviolet;
+    height: 35px;
+}
+
+.post-holder {
+    background-color: red;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.title-text {
+    text-align: left;
+}
+
+.user-text {
+    text-align: right;
+}
+
+.img {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.post-date {
+    text-align: left;
+}
+
+.post-likes {
+    text-align: right;
+}
+
+.post-description {
+    text-align: left;
+    border-bottom: black solid 1px;
+}
+
+.comment-section {
+    text-align: left;
+}
+
+.logo-placeholder {
+    color: black;
+}
