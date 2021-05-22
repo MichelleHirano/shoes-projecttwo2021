@@ -13,7 +13,6 @@
     color: black;
     padding-bottom: 0;
     margin-top: 10px;
-    border-right: solid 1px black;
 }
 
 .btn:hover {
@@ -38,7 +37,7 @@
     height: 100%;
     text-align: center;
     color: black;
-    border-right: white solid 1px;
+    border-right: rgb(0, 255, 234) solid 1px;
 }
 
 .blog-content {
@@ -129,4 +128,16 @@
 
 .logo-placeholder {
     color: black;
+}
+
+.single-comment-holder {
+    border-bottom: black solid 1px;
+}
+
+.comment-user {
+    border-right: black;
+}
+
+.hide {
+    display: none;
 }
