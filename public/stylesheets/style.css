@@ -138,6 +138,10 @@
     border-right: black;
 }
 
+.comment-date {
+    font-size: 12px;
+}
+
 .hide {
     display: none;
 }
