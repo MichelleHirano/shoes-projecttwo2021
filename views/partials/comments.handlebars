@@ -1,0 +1,11 @@
+<div class="comment-section-holder hide" id="comment-section">
+    {{#each this}}
+    <div class="single-comment-holder pure-g">
+        <div class="pure-u-1-8">
+            <p class="comment-user">{{user.username}}</p>
+            <p class="comment-date">{{format_date created_at}}</p>
+        </div>
+        <p class="comment-content pure-u-7-8">{{comment_text}}</p>
+    </div>
+    {{/each}}
+</div>
