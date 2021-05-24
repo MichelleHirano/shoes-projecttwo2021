@@ -23,14 +23,16 @@
            <div class="pure-menu ">
            <span class="pure-menu-heading company-logo">Company Logo</span>
 
-           <ul class="pure-menu-list btn-holder">
+           <ul class="pure-menu-list pure-menu-item  btn-holder">
                 {{#if loggedIn}}
                 <a href="/dashboard">dashboard</a>
-                <button id="logout" class="btn-no-style">logout</button>
+                <button id="logout" class="pure-menu-link btn">logout</button>
                 {{else}}
                 <a href="/login" class="pure-menu-link btn">login</a>
                 {{/if}}
 
+                 <a href="/dashboard" class="pure-menu-link btn">Create Post</a>
+                 <a href="/dashboard" class="pure-menu-link btn">View My Posts</a>
           </ul>
     
             </div>
@@ -38,7 +40,7 @@
         </nav>
     
 
-    <main>
+    <main >
       {{{ body }}}
     </main>
 
