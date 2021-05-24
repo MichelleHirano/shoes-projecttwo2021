@@ -22,7 +22,7 @@
             <ul class="pure-menu-list btn-holder">
                 {{#if loggedIn}}
                 <li class="pure-menu-item">
-                    <a href="/dashboard" class="pure-menu-link btn">Logout</a>
+                    <a href="/logout" id ="logout" class="pure-menu-link btn">Logout</a>
                 </li>
                 {{else}}
                 <li class="pure-menu-item">
@@ -36,13 +36,14 @@
                     <a href="/" class="pure-menu-link btn">View My Posts</a>
                 </li>
                 <li class="pure-menu-item">
-                    <a href="/dashboard/edit/{{post.id}}" class="pure-menu-link btn">Edit Post</a>
+                    <a href="/" class="pure-menu-link btn">Settings</a>
                 </li>
             </ul>
         </div>
     </div>
     {{>post-info post}}
-     {{#if loggedIn}}
+
+    {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
   {{/if}}
 </body>
