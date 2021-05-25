@@ -20,8 +20,9 @@
                     <p class="post-description"><b>Description:</b>  
                     {{post_content}}</p>
                 </div>
-                <button class="show-comments" id="show-btn">Show Comments</button>
-                {{>comments post.comments}}
+                <button class="show-comments" id="show-btn">View
+                <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+                </button>
             </div>
         </div>
     </div>
