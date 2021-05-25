@@ -3,8 +3,13 @@
     margin-top: 80px;
 }
 
-.company-logo {
-    color: white;
+.logo-image {
+    height: 100px;
+}
+
+.company-title {
+    color: rgb(0, 255, 234);
+    font-size: 20px;
 }
 
 .btn {
@@ -144,4 +149,8 @@
 
 .hide {
     display: none;
+}
+
+.test {
+    text-align: right;
 }

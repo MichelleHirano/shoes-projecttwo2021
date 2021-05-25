@@ -6,45 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoe View</title>
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
-        <h1 class="pure-g side-bar pure-u-1-8">Shoe Views</h1>
-        <nav class="navbar pure-menu">
-            {{#if loggedIn}}
-            <a href="/" class="navbar-item pure-menu">homepage</a>
-            <a href="/dashboard" class="navbar-item pure-menu">dashboard</a>
-            <a href="/dashboard/create/" class="navbar-item pure-menu">create post</a>
-            <button id="logout" class="button">logout</button>
-            {{else}}
-            <a href="/" class="navbar-item ">homepage</a>
-            <a href="/login" class="button">login</a>
-            {{/if}}
-        </nav>
-    </header>
-    
-    
+  <div class="pure-g">
+    <div class="side-bar pure-u-1-8">
+        <div class="pure-menu">
+            <span class="pure-menu-heading company-logo">
+              <img src="logo.png" class="logo-image"></img>
+              <p class="company-title">ShoeView</p>
+            </span>
+            <ul class="pure-menu-list btn-holder">
+                <li class="pure-menu-item">
+                    <a href="/" class="pure-menu-link btn">Homepage</a>
+                </li>
+                {{#if loggedIn}}
+                <li class="pure-menu-item">
+                    <a href="/logout" class="pure-menu-link btn logout">Logout</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/dashboard/create" class="pure-menu-link btn">Create Post</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/dashboard" class="pure-menu-link btn">View My Posts</a>
+                </li>
+                {{else}}
+                <li class="pure-menu-item">
+                    <a href="/login" class="pure-menu-link btn">Login</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/signup" class="pure-menu-link btn">Sign Up</a>
+                </li>
+                {{/if}}
+            </ul>
+        </div>
+      </div>
+  </div>
 
-    <main >
+  <div class="pure-g">
+    <div class="pure-u-1-8"></div>
+    <main class="pure-u-7-8">
       {{{ body }}}
     </main>
+  </div>
+    
+    
 
 
 
 
 
-     <footer >
-            <p>
-            <a href="/">homepage</a>{{#if loggedIn}} | 
-            <a href="/dashboard/">dashboard</a> | 
-            <a href="/dashboard/create/">create new post</a>
-            {{else}}
-             | <a href="/login/">login</a>
-            {{/if}}
-            </p>
+
+     <footer class="test">
     <p>
       <strong>Shoe Views</strong> by <a href="https://github.com/MichelleHirano/shoes-projecttwo2021.git">Adam, Gio, and Michelle</a> 
     </p>
