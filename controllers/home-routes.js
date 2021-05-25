@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
+var randomColor = require('randomcolor');
+var color = randomColor();
 
 router.get('/', (req, res) => {
     console.log(req.session);
@@ -46,7 +48,7 @@ router.get('/login', (req, res) => {
       return;
     }
   
-    res.render('login');
+    res.render('login', {color});
   });
 
   router.get('/signup', (req, res) => {
@@ -55,7 +57,7 @@ router.get('/login', (req, res) => {
       return;
     }
   
-    res.render('signup');
+    res.render('signup', {color});
   });
 
   router.get('/post/:id', (req, res) => {
