@@ -45,10 +45,24 @@
     </main>
 
 
-    <footer>
-      Thanks for visiting!
+
+
+
+     <footer >
+            <p>
+            <a href="/">homepage</a>{{#if loggedIn}} | 
+            <a href="/dashboard/">dashboard</a> | 
+            <a href="/dashboard/create/">create new post</a>
+            {{else}}
+             | <a href="/login/">login</a>
+            {{/if}}
+            </p>
+    <p>
+      <strong>Shoe Views</strong> by <a href="https://github.com/MichelleHirano/shoes-projecttwo2021.git">Adam, Gio, and Michelle</a> | source code:
+      <a href="https://github.com/MichelleHirano/shoes-projecttwo2021.git"></a> 
+    </p>
     </footer>
-  </div>
+  
   
 
   {{#if loggedIn}}
