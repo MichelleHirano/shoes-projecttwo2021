@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe View</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+        <h1 class="pure-g side-bar pure-u-1-8">Shoe Views</h1>
+        <nav class="navbar pure-menu">
+            {{#if loggedIn}}
+            <a href="/" class="navbar-item pure-menu">homepage</a>
+            <a href="/dashboard" class="navbar-item pure-menu">dashboard</a>
+            <a href="/dashboard/create/" class="navbar-item pure-menu">create post</a>
+            <button id="logout" class="button">logout</button>
+            {{else}}
+            <a href="/" class="navbar-item ">homepage</a>
+            <a href="/login" class="button">login</a>
+            {{/if}}
+        </nav>
+    </header>
+    
+    
+
+    <main >
+      {{{ body }}}
+    </main>
+
+
+
+
+
+     <footer >
+            <p>
+            <a href="/">homepage</a>{{#if loggedIn}} | 
+            <a href="/dashboard/">dashboard</a> | 
+            <a href="/dashboard/create/">create new post</a>
+            {{else}}
+             | <a href="/login/">login</a>
+            {{/if}}
+            </p>
+    <p>
+      <strong>Shoe Views</strong> by <a href="https://github.com/MichelleHirano/shoes-projecttwo2021.git">Adam, Gio, and Michelle</a> 
+    </p>
+    </footer>
+  
+  
+
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
