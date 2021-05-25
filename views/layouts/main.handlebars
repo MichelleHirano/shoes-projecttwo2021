@@ -11,33 +11,21 @@
 
 <body>
   <div class="wrapper">
-    <header class="pure-g">
-         <div class="pure-u-1-8"></div>
-            <h1>
-            <a href="/">Shoe View</a>
-            </h1>
-
-    </header>
-
-      <nav class="pure-g side-bar pure-u-1-8">
-           <div class="pure-menu ">
-           <span class="pure-menu-heading company-logo">Company Logo</span>
-
-           <ul class="pure-menu-list pure-menu-item  btn-holder">
-                {{#if loggedIn}}
-                <a href="/dashboard">dashboard</a>
-                <button id="logout" class="pure-menu-link btn">logout</button>
-                {{else}}
-                <a href="/login" class="pure-menu-link btn">login</a>
-                {{/if}}
-
-                 <a href="/dashboard" class="pure-menu-link btn">Create Post</a>
-                 <a href="/dashboard" class="pure-menu-link btn">View My Posts</a>
-          </ul>
-    
-            </div>
-
+    <header>
+        <h1 class="pure-g side-bar pure-u-1-8">Shoe Views</h1>
+        <nav class="navbar pure-menu">
+            {{#if loggedIn}}
+            <a href="/" class="navbar-item pure-menu">homepage</a>
+            <a href="/dashboard" class="navbar-item pure-menu">dashboard</a>
+            <a href="/dashboard/create/" class="navbar-item pure-menu">create post</a>
+            <button id="logout" class="button">logout</button>
+            {{else}}
+            <a href="/" class="navbar-item ">homepage</a>
+            <a href="/login" class="button">login</a>
+            {{/if}}
         </nav>
+    </header>
+    
     
 
     <main >
@@ -58,8 +46,7 @@
             {{/if}}
             </p>
     <p>
-      <strong>Shoe Views</strong> by <a href="https://github.com/MichelleHirano/shoes-projecttwo2021.git">Adam, Gio, and Michelle</a> | source code:
-      <a href="https://github.com/MichelleHirano/shoes-projecttwo2021.git"></a> 
+      <strong>Shoe Views</strong> by <a href="https://github.com/MichelleHirano/shoes-projecttwo2021.git">Adam, Gio, and Michelle</a> 
     </p>
     </footer>
   

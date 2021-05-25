@@ -1,7 +1,9 @@
-<ol class="post-list">
-  {{#each posts as |post|}}
-  <li>
-    {{> post-info post }}
-  </li>
-  {{/each}}
-</ol>
+
+{{#each posts as |post|}}
+
+{{> post-info post }}
+</div>
+
+{{else}}
+<h6>there are currently no posts</h6>
+{{/each}}

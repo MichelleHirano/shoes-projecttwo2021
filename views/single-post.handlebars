@@ -1,5 +1,8 @@
-{{>post-info post}}
+<!-- displaying articles -->
+{{> post-info post}}
 
+<!-- displaying form and comments-->
+<!-- only display if logged in -->
 {{#if loggedIn}}
 <form class="comment-form">
   <div>
@@ -7,8 +10,9 @@
   </div>
 
   <div>
-    <button type="submit">add comment</button>
+    <button class="button" type="submit">add comment</button>
   </div>
+  
 </form>
 {{/if}}
 
@@ -16,5 +20,4 @@
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
-<script src="/javascript/upvote.js"></script>
 {{/if}}

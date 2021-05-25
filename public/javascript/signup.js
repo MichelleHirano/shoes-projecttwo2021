@@ -5,7 +5,6 @@ async function signupFormHandler(event) {
     const email = document.querySelector('#email-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
     const twitter = document.querySelector('#twitter-signup').value.trim();
-    const github = document.querySelector('#github-signup').value.trim();
   
     if (username && email && password) {
       const response = await fetch('/api/users', {
@@ -14,7 +13,6 @@ async function signupFormHandler(event) {
           username,
           email,
           twitter,
-          github,
           password
         }),
         headers: { 'Content-Type': 'application/json' }
