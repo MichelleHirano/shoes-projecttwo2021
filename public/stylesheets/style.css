@@ -146,6 +146,6 @@
     display: none;
 }
 
-footer {
-    margin-left: 500px;
+.test {
+    text-align: right;
 }

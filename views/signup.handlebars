@@ -1,27 +1,17 @@
-<div class="column">
-<h2 class="title">create new account:</h2><hr>
-<form class="signup-form">
-  <div>
-    <label for="username-signup">username:</label>
-    <input type="text" id="username-signup" />
-  </div>
-  <div>
-    <label for="email-signup">email:</label>
-    <input type="text" id="email-signup" />
-  </div>
-<div>
-    <label for="twitter-signup">twitter:</label>
-    <input type="text" id="twitter-signup" />
-  </div>
-  <div>
-    <label for="password-signup">password:</label>
-    <input type="password" id="password-signup" />
-  </div>
-  <div>
-    <button type="submit" class="button is-primary">signup</button>
-  </div>
+<h2 class="page-title">Registration</h2>
+<form class="pure-form pure-form-stacked signup-form">
+    <fieldset>
+        <label for="username-signup">Username</label>
+        <input type="text" id="username-signup" placeholder="Username" />
+        <label for="email-signup">Email</label>
+        <input type="email" id="email-signup" placeholder="Email" />
+        <label for="twitter-signup">Twitter:</label>
+        <input type="text" id="twitter-signup" placeholder="Twitter"/>
+        <label for="password-signup">Password</label>
+        <input type="password" id="password-signup" placeholder="Password" />
+        <button type="submit" class="pure-button pure-button-primary signup-btn">Register</button>
+    </fieldset>
 </form>
-</div>
 
 <!-- javascript file-->
 <script src="/javascript/signup.js"></script>
