@@ -10,41 +10,48 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
-        <h1 class="pure-g side-bar pure-u-1-8">Shoe Views</h1>
-        <nav class="navbar pure-menu">
-            {{#if loggedIn}}
-            <a href="/" class="navbar-item pure-menu">homepage</a>
-            <a href="/dashboard" class="navbar-item pure-menu">dashboard</a>
-            <a href="/dashboard/create/" class="navbar-item pure-menu">create post</a>
-            <button id="logout" class="button">logout</button>
-            {{else}}
-            <a href="/" class="navbar-item ">homepage</a>
-            <a href="/login" class="button">login</a>
-            {{/if}}
-        </nav>
-    </header>
+  <div class="pure-g">
+    <div class="side-bar pure-u-1-8">
+        <div class="pure-menu ">
+            <span class="pure-menu-heading company-logo">Shoe Views</span>
+            <ul class="pure-menu-list btn-holder">
+                <li class="pure-menu-item">
+                    <a href="/" class="pure-menu-link btn">Homepage</a>
+                </li>
+                {{#if loggedIn}}
+                <li class="pure-menu-item">
+                    <a href="/logout" class="pure-menu-link btn logout">Logout</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/dashboard/create" class="pure-menu-link btn">Create Post</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/dashboard" class="pure-menu-link btn">View My Posts</a>
+                </li>
+                {{else}}
+                <li class="pure-menu-item">
+                    <a href="/login" class="pure-menu-link btn">Login</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/signup" class="pure-menu-link btn">Sign Up</a>
+                </li>
+                {{/if}}
+            </ul>
+        </div>
+      </div>
+    <main>
+      {{{ body }}}
+    </main>
+  </div>
     
     
 
-    <main >
-      {{{ body }}}
-    </main>
 
 
 
 
 
      <footer >
-            <p>
-            <a href="/">homepage</a>{{#if loggedIn}} | 
-            <a href="/dashboard/">dashboard</a> | 
-            <a href="/dashboard/create/">create new post</a>
-            {{else}}
-             | <a href="/login/">login</a>
-            {{/if}}
-            </p>
     <p>
       <strong>Shoe Views</strong> by <a href="https://github.com/MichelleHirano/shoes-projecttwo2021.git">Adam, Gio, and Michelle</a> 
     </p>

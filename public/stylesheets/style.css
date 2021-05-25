@@ -145,3 +145,7 @@
 .hide {
     display: none;
 }
+
+footer {
+    margin-left: 500px;
+}
