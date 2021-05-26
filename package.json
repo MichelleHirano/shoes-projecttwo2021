@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MichelleHirano/shoes-projecttwo2021#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.1",
     "dotenv": "^9.0.2",

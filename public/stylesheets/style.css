@@ -72,11 +72,7 @@
     text-align: center;
     margin-top: 16px;
     text-decoration: none;
-    color: blue;
-}
-
-.user-text:hover {
-    color: darkblue;
+    color: black;
 }
 
 .img {
@@ -93,21 +89,13 @@
     margin-top: 16px;
 }
 
-.post-upvote {
+.twitter-link {
     text-align: left;
     margin-top: 16px;
-    color: black;
+    color: blue;
     text-decoration: none;
     width: 16px;
     height: 16px;
-}
-
-.post-upvote:hover {
-    color: red;
-}
-
-.post-upvote:active {
-    color: red;
 }
 
 .upvote-count {
