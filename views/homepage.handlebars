@@ -1,9 +1,14 @@
+<div class="pure-g">
+    <div class="pure-u-1-8"></div>
+    <div class="pure-u-7-8 background-black">
+        <h2 class="page-title">Homepage</h2>
+    </div>
+</div>
 
 {{#each posts as |post|}}
 
 {{> post-info post }}
-</div>
 
 {{else}}
-<h6>there are currently no posts</h6>
+<h6 class="text-color no-posts-text">There are currently no posts.</h6>
 {{/each}}

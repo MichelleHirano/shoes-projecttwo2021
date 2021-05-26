@@ -1,17 +1,18 @@
-
-    <div>
-        <h2 class="page-title">Your Posts</h2>
-{{#if posts.length}}
-    </div>
-
-    {{#each posts as |post|}}
-        {{> post-info post}}
-        
-            <a href="/dashboard/edit/{{post.id}}"><button class="pure-button">Edit</button></a>
+<div class="pure-g background-black">
+    <div class="pure-u-1-8"></div>
+    <div class="pure-u-7-8">
+        <div>
+            <h2 class="page-title">Your Posts</h2>
+           {{#if posts.length}}
         </div>
-    {{/each}}
-
-{{else}}
-<h6 >you do not currently have any posts</h6>
-
-{{/if}}
+        {{#each posts as |post|}}
+        <div class="pure-u-7-8 edit-holder">
+            <a href="/dashboard/edit/{{post.id}}"><button class="pure-button edit-btn">Edit</button></a>
+        </div>
+        {{> post-info post}}
+        {{/each}}
+    {{else}}
+    <h6 class="text-color no-post-text">You currently have no posts.</h6>
+    {{/if}}
+    </div>
+</div>

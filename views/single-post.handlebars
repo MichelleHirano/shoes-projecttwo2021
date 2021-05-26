@@ -1,19 +1,21 @@
 <!-- displaying articles -->
 {{> post-info post}}
-
 <!-- displaying form and comments-->
 <!-- only display if logged in -->
 {{#if loggedIn}}
-<form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
+<div class="pure-g background-black">
+  <div class="pure-u-1-8"></div>
+  <div class="pure-u-7-8">
+      <form class="comment-form">
+          <div>
+              <textarea name="comment-body" class="comment-textarea"></textarea>
+          </div>
+          <div>
+            <button class="button pure-button pure-button-primary create-btn" type="submit">add comment</button>
+          </div>
+      </form>
   </div>
-
-  <div>
-    <button class="button" type="submit">add comment</button>
-  </div>
-  
-</form>
+</div>
 {{/if}}
 
 {{> comments post.comments}}
