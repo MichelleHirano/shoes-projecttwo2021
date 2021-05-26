@@ -1,3 +1,4 @@
+//require
 const router = require('express').Router();
 const { User, Post, Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
@@ -103,7 +104,7 @@ router.post('/', (req, res) => {
     });
   });
 
-
+//LOGOUT
   router.post('/logout', (req, res) => {
     if (req.session.loggedIn) {
       req.session.destroy(() => {
@@ -114,6 +115,7 @@ router.post('/', (req, res) => {
       res.status(404).end();
     }
   });
+
 
 // PUT /api/users/1
 router.put('/:id', withAuth, (req, res) => {
@@ -136,7 +138,7 @@ router.put('/:id', withAuth, (req, res) => {
       });
   });
 
-// DELETE /api/users/1
+// DELETE 
 router.delete('/:id', withAuth, (req, res) => {
     User.destroy({
       where: {
@@ -156,4 +158,5 @@ router.delete('/:id', withAuth, (req, res) => {
       });
   });
 
+  
 module.exports = router;
