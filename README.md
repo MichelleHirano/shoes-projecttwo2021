@@ -13,9 +13,9 @@
 
 ## Screenshot
 
-![screenshot of Signup](https://github.com/MichelleHirano/shoes-projecttwo2021/blob/a01d98fa341b2f4459b9678d4a5f9c61382952c7/examples/signin.png)
-![screenshot of Posts](https://github.com/MichelleHirano/shoes-projecttwo2021/blob/a01d98fa341b2f4459b9678d4a5f9c61382952c7/examples/post.png)
-![screenshot of Comments](https://github.com/MichelleHirano/shoes-projecttwo2021/blob/a01d98fa341b2f4459b9678d4a5f9c61382952c7/examples/add-comment.png)
+![screenshot of Signup](https://github.com/MichelleHirano/shoes-projecttwo2021/blob/6a160827b3f5edfb416a7a6cc1df68e631d69f4d/examples/signin.png)
+![screenshot of Posts](https://github.com/MichelleHirano/shoes-projecttwo2021/blob/6a160827b3f5edfb416a7a6cc1df68e631d69f4d/examples/create-post.png)
+![screenshot of Homepage](https://github.com/MichelleHirano/shoes-projecttwo2021/blob/6a160827b3f5edfb416a7a6cc1df68e631d69f4d/examples/posts.png)
 
 
 
@@ -52,8 +52,8 @@ DB_PW='XXX'
 ```
 
 ## Video Walkthrough
-
-![video](https://github.com/MichelleHirano/shoes-projecttwo2021/blob/a01d98fa341b2f4459b9678d4a5f9c61382952c7/examples/Project2.mp4)
+1[gif](https://github.com/MichelleHirano/shoes-projecttwo2021/blob/6a160827b3f5edfb416a7a6cc1df68e631d69f4d/examples/project2.gif)
+![video](https://github.com/MichelleHirano/shoes-projecttwo2021/blob/6a160827b3f5edfb416a7a6cc1df68e631d69f4d/examples/Project%202%20demo.mp4)
 
 ## Contribution
 Adam, Gio, Michelle 

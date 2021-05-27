@@ -1,11 +1,16 @@
-<div class="comments comment-section-holder" id="comment-section">
-  {{#each this}}
-    <div class="single-comment-holder pure-g">
-      <div class="pure-u-1-8 comment">
-          <p class="comment-user">{{user.username}}</p>
-          <p class="comment-date">{{format_date created_at}}</p>
+<div class="pure-g background-black">
+  <div class="pure-u-1-8"></div>
+  <div class="pure-u-7-8">
+      <div class="comments post-holder" id="comment-section">
+      {{#each this}}
+          <div class="single-comment-holder pure-g">
+              <div class="pure-u-1-8 comment">
+                <p class="comment-user">{{user.username}}</p>
+                <p class="comment-date">{{format_date created_at}}</p>
+              </div>
+              <p class="text comment-content pure-u-7-8">{{comment_text}}</p>
+          </div>
+      {{/each}}
       </div>
-      <p class="text comment-content pure-u-7-8">{{comment_text}}</p>
-    </div>
-    {{/each}}
+  </div>
 </div>
