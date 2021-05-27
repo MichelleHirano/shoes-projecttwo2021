@@ -12,10 +12,10 @@
 * Handlebars
 
 ## Screenshot
-![screenshot of startpage]()
-![screenshot of Signup]()
-![screenshot of Posts]()
 
+![screenshot of Signup](https://github.com/MichelleHirano/shoes-projecttwo2021/blob/a01d98fa341b2f4459b9678d4a5f9c61382952c7/examples/signin.png)
+![screenshot of Posts](https://github.com/MichelleHirano/shoes-projecttwo2021/blob/a01d98fa341b2f4459b9678d4a5f9c61382952c7/examples/post.png)
+![screenshot of Comments](https://github.com/MichelleHirano/shoes-projecttwo2021/blob/a01d98fa341b2f4459b9678d4a5f9c61382952c7/examples/add-comment.png)
 
 
 
@@ -50,6 +50,10 @@ DB_NAME='shooz_db'
 DB_USER='xxx'
 DB_PW='XXX'
 ```
+
+## Video Walkthrough
+
+![video](https://github.com/MichelleHirano/shoes-projecttwo2021/blob/a01d98fa341b2f4459b9678d4a5f9c61382952c7/examples/Project2.mp4)
 
 ## Contribution
 Adam, Gio, Michelle 
