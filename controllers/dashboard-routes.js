@@ -1,8 +1,10 @@
+//require
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
+//get All
 router.get('/', withAuth, (req, res) => {
     Post.findAll({
       where: {
@@ -41,6 +43,7 @@ router.get('/', withAuth, (req, res) => {
       });
   });
 
+  //edit one
   router.get('/edit/:id', withAuth, (req, res) => {
     Post.findOne({
       where: {
@@ -72,7 +75,6 @@ router.get('/', withAuth, (req, res) => {
           res.status(404).json({ message: 'No post found with this id' });
           return;
         }
-  
         // serialize the data
         const post = dbPostData.get({ plain: true });
 

@@ -21,7 +21,7 @@
                 <li class="pure-menu-item">
                     <a href="/" class="pure-menu-link btn">Homepage</a>
                 </li>
-                {{#if loggedIn}}
+                    {{#if loggedIn}}
                 <li class="pure-menu-item">
                     <a href="/logout" class="pure-menu-link btn logout">Logout</a>
                 </li>
@@ -31,25 +31,25 @@
                 <li class="pure-menu-item">
                     <a href="/dashboard" class="pure-menu-link btn">View My Posts</a>
                 </li>
-                {{else}}
+                      {{else}}
                 <li class="pure-menu-item">
                     <a href="/login" class="pure-menu-link btn">Login</a>
                 </li>
                 <li class="pure-menu-item">
                     <a href="/signup" class="pure-menu-link btn">Sign Up</a>
                 </li>
-                {{/if}}
+                       {{/if}}
             </ul>
         </div>
       </div>
   </div>
 
-  <div class="pure-g">
-    <div class="pure-u-1-8"></div>
-    <main class="pure-u-7-8">
-      {{{ body }}}
-    </main>
-  </div>
+        <div class="pure-g">
+            <div class="pure-u-1-8"></div>
+                <main class="pure-u-7-8">
+                    {{{ body }}}
+                </main>
+             </div>
     
     
 

@@ -2,11 +2,21 @@
 
    
 
-### Application Deployment
+## Built with 
+* HTML
+* CSS
+* JavaScript
+* JQuery
+* CSS Pure
+* Randomcolor NPM
+* Handlebars
+
+## Screenshot
+![screenshot of startpage]()
+![screenshot of Signup]()
+![screenshot of Posts]()
 
 
-
-### Application Screenshot
 
 
 ### User Story
@@ -27,6 +37,8 @@ WHEN I click on the homepage option
 THEN I am taken to the homepage
 WHEN I click on any other links in the navigation
 THEN I am prompted to either sign up or sign in
+When I click create post
+Then I can create a new post for my page
 
 
 ### Installation Guidelines
@@ -35,6 +47,9 @@ THEN I am prompted to either sign up or sign in
 
 ```text
 DB_NAME='shooz_db'
-DB_USER='root'
+DB_USER='xxx'
 DB_PW='XXX'
 ```
+
+## Contribution
+Adam, Gio, Michelle 
