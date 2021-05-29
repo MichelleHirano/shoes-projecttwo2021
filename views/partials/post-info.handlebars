@@ -1,29 +1,28 @@
 <div class="pure-g">
-        <div class="pure-u-1-8"></div>
+    <div class="pure-u-1-8"></div>
         <div class="pure-u-7-8 blog-content">
             <div class="post-holder">
-                <h2 class="shoe-name">{{title}}</h2>
+                <h2 class="shoe-name no-top-margin">{{title}}</h2>
                 <img class="img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"></img>
                 <div class="post-header pure-g">
                     <div class="pure-u-1-3 user-holder">
-                        <a href="#" class="user-text">{{user.username}}</a>
+                        <a href="#" class="user-text">By: <b>{{user.username}}</b></a>
                     </div>
-                    <div class="like-holder pure-u-1-3">
-                        <div class="pure-g">
-                            <p class="upvote-count pure-u-1-2">{{vote_count}}</p>
-                            <a href="#" class="post-upvote pure-u-1-2">&#9829;</a>
-                        </div>
+
+                    <div class="twitter-holder pure-u-1-3">
+                        <a href="https://twitter.com/{{user.twitter}}" class="twitter-text">Twitter</a>
                     </div>
-                    <p class="post-date pure-u-1-3">{{format_date created_at}}</p>
+                    <p class="post-date pure-u-1-3"><b>{{format_date created_at}}</b></p>
                 </div>
+                
                 <div class="description-holder">
                     <p class="post-description"><b>Description:</b>  
                     {{post_content}}</p>
                 </div>
-                <button class="show-comments" id="show-btn">View
-                <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+
+                <button class="show-comments-btn pure-button" id="show-btn">
+                <a href="/post/{{id}}" class="show-comments-text">View {{comments.length}} {{format_plural "comment" comments.length}}</a>
                 </button>
             </div>
         </div>
     </div>
-    <script src="./javascript/comments-toggle.js"></script>

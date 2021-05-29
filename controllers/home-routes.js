@@ -1,9 +1,12 @@
+//require
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 var randomColor = require('randomcolor');
+
 var color = randomColor();
 
+//Find All
 router.get('/', (req, res) => {
     console.log(req.session);
     
@@ -42,6 +45,7 @@ router.get('/', (req, res) => {
       });
   });
 
+  //Login
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
       res.redirect('/');
@@ -51,6 +55,7 @@ router.get('/login', (req, res) => {
     res.render('login', {color});
   });
 
+  //Signup
   router.get('/signup', (req, res) => {
     if (req.session.loggedIn) {
       res.redirect('/');
